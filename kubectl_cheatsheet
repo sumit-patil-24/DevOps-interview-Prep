@@ -7,3 +7,7 @@ helm install my-app-release my-2-tier-app --dry-run --debug
 
 # 3. Install the chart
 helm install my-app-release my-2-tier-app
+
+---
+
+kubectl describe <pod>
