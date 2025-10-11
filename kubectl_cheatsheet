@@ -1,1 +1,9 @@
 
+# 1. Check your chart for syntax errors (optional, but recommended)
+helm lint my-2-tier-app
+
+# 2. Dry-run to see the final rendered Kubernetes YAML (recommended)
+helm install my-app-release my-2-tier-app --dry-run --debug
+
+# 3. Install the chart
+helm install my-app-release my-2-tier-app
